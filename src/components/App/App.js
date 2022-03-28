@@ -6,13 +6,20 @@ import './App.css';
 import useToken from './useToken';
 
 
+
 //now we should be able to login and stay logged in- if we want to test a new one
 //in the console type localStorage.clear()
 function App() {
   const {token, setToken} = useToken();
 
+  console.log('token is ', token)
+
   if(!token) {
-    return <Login setToken={setToken} />
+    return (
+      <BrowserRouter>
+        <Login setToken={setToken} />
+      </BrowserRouter>
+    )
   }
   return (
     <div className="wrapper">

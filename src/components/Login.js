@@ -1,33 +1,39 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../Login.css';
-
-
-
-async function loginUser(credentials) {
-    return fetch('http://localhost:8080/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(credentials)
-    })
-    .then(data => data.json())
-}
-
-
-
+import { useHistory } from 'react-router-dom';
 function Login({ setToken }) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 
+    const history = useHistory();
+    console.log("history: ", history)
+
+    async function loginUser(credentials) {
+        return fetch('http://localhost:8080/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(credentials)
+        })
+          .then(data => data.json())
+          .then(json => {
+              history.push('/dashboard')
+              setToken(json);
+          })
+          .catch(error => {
+              history.push('/');
+              console.log(error);
+          });
+    }
+
     const handleSubmit = async e => {
         e.preventDefault();
-        const token = await loginUser({
+        await loginUser({
             username,
             password
         });
-        setToken(token);
     }
 
     return (
