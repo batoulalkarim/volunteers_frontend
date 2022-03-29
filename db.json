@@ -1,0 +1,70 @@
+{
+    "organizations": [
+        {
+            "id": 1,
+            "name": "Water Well",
+            "location": "Paraguay, South America",
+            "bio": "Our mission is to ensure all human beings have a clean safe source of Water. No human should go thirsty- our goal is to ensure none do anymore.",
+            "tasks": {
+                "build": "Help a team of engineers build water filters at our HeadQuarters in Denver, CO.",
+                "pack_and_ship": "Pick up our filters from the building community, Pack them up in a secure package, and ship them to the proper country. We will cover all shipping and packaging fees.",
+                "installation": "Join fellow Volunteers in flying to countries in need and help install these new water filters. See the pure joy on locals' faces when you grant them the access to clean water. *we will not pay for flights*"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Hope For All",
+            "location": "Gambia, Africa",
+            "bio": "Our mission is to ensure all human beings have a clean safe source of Water. No human should go thirsty- our goal is to ensure none do anymore.",
+            "tasks": {
+                "build": "Help a team of engineers build water filters at our HeadQuarters in Denver, CO.",
+                "pack_and_ship": "Pick up our filters from the building community, Pack them up in a secure package, and ship them to the proper country. We will cover all shipping and packaging fees.",
+                "installation": "Join fellow Volunteers in flying to countries in need and help install these new water filters. See the pure joy on locals' faces when you grant them the access to clean water. *we will not pay for flights*"
+            }   
+        },
+        {
+            "id": 3,
+            "name": "Love and Water",
+            "location": "Palestine",
+            "bio": "Our mission is to ensure all human beings have a clean safe source of Water. No human should go thirsty- our goal is to ensure none do anymore.",
+            "tasks": {
+                "build": "Help a team of engineers build water filters at our HeadQuarters in Denver, CO.",
+                "pack_and_ship": "Pick up our filters from the building community, Pack them up in a secure package, and ship them to the proper country. We will cover all shipping and packaging fees.",
+                "installation": "Join fellow Volunteers in flying to countries in need and help install these new water filters. See the pure joy on locals' faces when you grant them the access to clean water. *we will not pay for flights*"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Life",
+            "location": "Mexico",
+            "bio": "Our mission is to ensure all human beings have a clean safe source of Water. No human should go thirsty- our goal is to ensure none do anymore.",
+            "tasks": {
+                "build": "Help a team of engineers build water filters at our HeadQuarters in Denver, CO.",
+                "pack_and_ship": "Pick up our filters from the building community, Pack them up in a secure package, and ship them to the proper country. We will cover all shipping and packaging fees.",
+                "installation": "Join fellow Volunteers in flying to countries in need and help install these new water filters. See the pure joy on locals' faces when you grant them the access to clean water. *we will not pay for flights*"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Drink",
+            "location": "Somalia",
+            "bio": "Our mission is to ensure all human beings have a clean safe source of Water. No human should go thirsty- our goal is to ensure none do anymore.",
+            "tasks": {
+                "build": "Help a team of engineers build water filters at our HeadQuarters in Denver, CO.",
+                "pack_and_ship": "Pick up our filters from the building community, Pack them up in a secure package, and ship them to the proper country. We will cover all shipping and packaging fees.",
+                "installation": "Join fellow Volunteers in flying to countries in need and help install these new water filters. See the pure joy on locals' faces when you grant them the access to clean water. *we will not pay for flights*"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Resolutions",
+            "location": "Haiti",
+            "bio": "Our mission is to ensure all human beings have a clean safe source of Water. No human should go thirsty- our goal is to ensure none do anymore.",
+            "tasks": {
+                "build": "Help a team of engineers build water filters at our HeadQuarters in Denver, CO.",
+                "pack_and_ship": "Pick up our filters from the building community, Pack them up in a secure package, and ship them to the proper country. We will cover all shipping and packaging fees.",
+                "installation": "Join fellow Volunteers in flying to countries in need and help install these new water filters. See the pure joy on locals' faces when you grant them the access to clean water. *we will not pay for flights*"
+            }
+        }
+    ]
+}

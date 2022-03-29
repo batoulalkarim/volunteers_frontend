@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Login from '../Login';
 import './App.css';
 import useToken from './useToken';
+import Nav from '../Nav';
 
 
 
@@ -24,12 +25,15 @@ function App() {
   return (
     <div className="wrapper">
       <h1>Live Well</h1>
+      
       <BrowserRouter>
+      <Nav />
       <Switch>
         <Route path="/dashboard">
           <Dashboard />
         </Route>
       </Switch>
+    
       </BrowserRouter>
     </div>
   );
