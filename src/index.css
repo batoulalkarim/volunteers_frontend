@@ -3,14 +3,37 @@
     border: solid;
 }
 
+.boxes {
+    text-align: center;
+    display: block;
+}
+
 .orgwrap {
     border: solid;
-    text-align: center;
     margin-right: 50%;
+    margin-left: 20%;
+    display: block;
+    height: 275px;
+    width: 320px;
+    overflow: auto;
 }
+
+.taskwrap {
+    border: solid;
+    margin-left: 55%;
+    margin-right: 20%;
+    margin-top: -278px;
+    height: 275px;
+    width: 320px;
+    overflow: auto;
+}
+
 .db {
     text-align: center;
     margin-right: 50%;
+    margin-top: 0;
+
+    
 }
 .navbar {
     border: solid;
@@ -18,6 +41,7 @@
     width: 60px;
     position: relative;
     padding-right: 60px;
+   
 }
 
 /* .navbar {
