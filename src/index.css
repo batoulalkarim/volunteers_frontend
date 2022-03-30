@@ -46,6 +46,22 @@ html {
     padding-right: 60px;
    
 }
+.wrapper {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://images.unsplash.com/photo-1517384084767-6bc118943770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  height: 1000px;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: -18px 0 0 -16px;
+  padding-top: 30px;
+  margin-right: -50px;
+}
 
 .login-wrapper {
   height: 100%;

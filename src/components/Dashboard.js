@@ -19,7 +19,7 @@ function Dashboard() {
     }, [])
 
     return (
-        <div>
+        <div className='dbbg'>
         <h2 className='db'> DashBoard </h2>
         <div className='boxes'>
         <Organization organizations={organizations} />
