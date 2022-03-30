@@ -37,21 +37,26 @@ function Login({ setToken }) {
     }
 
     return (
-        <div className ="login-wrapper">
-            <h1>Please Log In</h1>
+        
+        <div className="login-wrapper">
+            <h1 id='logintitle'><ul>LIVE WELL</ul></h1>
+        <div >
+            
+            <h1 className="litext"> Log In</h1>
         <form onSubmit={handleSubmit}>
             <label>
-                <p>Username</p>
+                <p className="litext"><strong>USERNAME</strong></p>
                 <input type= "text" onChange={e => setUserName(e.target.value)}/>
             </label>
             <label>
-                <p>Password</p>
+                <p className="litext"><strong>PASSWORD</strong></p>
                 <input type="password" onChange={e => setPassword(e.target.value)}/>
             </label>
             <div>
                 <button type="submit">Login</button>
             </div>
         </form>
+        </div>
         </div>
     )
 }
