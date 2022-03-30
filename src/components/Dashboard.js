@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Organization from './Organization';
 import Task from './Task';
-
 // import CommittedOrganizations from './CommittedOrganizations';
 // import DropDownMenu from './DropDownMenu'
 // import OrganizationPresenter from './OrganizationPresenter';
+
 
 function Dashboard() {
  
@@ -24,7 +24,7 @@ function Dashboard() {
     }, [])
 
     return (
-        <div>
+        <div className='dbbg'>
         <h2 className='db'> DashBoard </h2>
         <div className='boxes'>
         <Organization organizations={organizations} onClick={() => setButtonPopup(true)} trigger={buttonPopup} setTrigger={setButtonPopup}/>

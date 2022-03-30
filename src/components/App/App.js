@@ -8,6 +8,7 @@ import Nav from '../Nav';
 import Contact from '../Contact';
 import Recommend from '../Recommend';
 import YourCommits from '../YourCommits';
+import Review from '../Review';
 
 
 //now we should be able to login and stay logged in- if we want to test a new one
@@ -26,7 +27,7 @@ function App() {
   }
   return (
     <div className="wrapper">
-      <h1>Live Well</h1>
+      <h1>LIVE WELL</h1>
       
       <BrowserRouter>
       <Nav />
@@ -42,6 +43,9 @@ function App() {
         </Route>
         <Route path='/yourcommits'>
           <YourCommits />
+        </Route>
+        <Route path='/review'>
+          <Review />
         </Route>
       </Switch>
     
