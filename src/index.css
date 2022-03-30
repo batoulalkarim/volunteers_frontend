@@ -98,6 +98,7 @@ html {
   padding-top: 30px;
   margin-right: -50px;
   /* overflow:hidden; */
+  
 }
 #logintitle {
   text-align: left;
@@ -105,12 +106,23 @@ html {
   margin-left: 20px;
   margin-right: 1000px;
   padding-right: 30px;
+  padding-bottom: 20px;
   margin-top: -50px;
   left: 0;
   color: rgb(17, 17, 17);
+  letter-spacing: 4px;
+  animation: mytitle 3s infinite;
+  
   /* position: absolute; */
   /* box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2); */
+
 }
+
+@keyframes mytitle {
+  50% {margin-left: 50px;}
+}
+
+
 .litext {
   
   text-align: center;
