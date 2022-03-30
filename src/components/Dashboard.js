@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Organization from './Organization';
 import Task from './Task';
-// import CommittedOrganizations from './CommittedOrganizations';
-// import DropDownMenu from './DropDownMenu'
-// import OrganizationPresenter from './OrganizationPresenter';
+
 
 function Dashboard() {
  

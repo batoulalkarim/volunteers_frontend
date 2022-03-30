@@ -46,7 +46,7 @@
         },
         {
             "id": 5,
-            "name": "Drink",
+            "name": "Drinkable",
             "location": "Somalia",
             "bio": "Our mission is to ensure all human beings have a clean safe source of Water. No human should go thirsty- our goal is to ensure none do anymore.",
             "tasks": {

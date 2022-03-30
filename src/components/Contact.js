@@ -6,13 +6,15 @@ function Contact() {
         <div className='contactwrap'>
             <h1>Contact Us</h1>
             <div className="dropdown">
-                <label htmlFor="pickone">Please choose an option:</label><br />
+                <label htmlFor="pickone">Please choose an option:</label>
                 <br />
                 <div className="dropdown-content">
-                    
-                    <a href='/recommend'>Recommend an Organization</a><br />
-                    <a href="#">Review your experience </a>
-
+                    <ul className='centerul'>
+                    <li><a href='/recommend'>Recommend an Organization</a></li><br />
+                    </ul>
+                    <ul className='centerul'>
+                   <li> <a href="/review">Review your experience </a> </li>
+                    </ul>
                 </div>
             </div>
             <h2>Have a comment or complain? Contact us directly:</h2>
