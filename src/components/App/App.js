@@ -9,6 +9,7 @@ import Contact from '../Contact';
 import Recommend from '../Recommend';
 import YourCommits from '../YourCommits';
 
+
 //now we should be able to login and stay logged in- if we want to test a new one
 //in the console type localStorage.clear()
 function App() {
