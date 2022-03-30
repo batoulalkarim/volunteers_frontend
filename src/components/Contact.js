@@ -3,7 +3,7 @@ import React from 'react';
 
 function Contact() {
     return(
-        <div>
+        <div className='contactwrap'>
             <h1>Contact Us</h1>
             <div className="dropdown">
                 <label htmlFor="pickone">Please choose an option:</label><br />
