@@ -23,6 +23,12 @@ function YourCommits(onRemoveCommitmentClick){
         <div className="commitscontainer">
             <h1>**This is where we'll put all of the commits that have been added**</h1>
             {commitedList}
+            <div className='cup'>
+                
+            </div>
+            <div className='committedtasks'>
+              <h3>Your Tasks</h3>
+            </div>
         </div>
     )
 }
