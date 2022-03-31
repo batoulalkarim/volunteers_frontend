@@ -10,31 +10,44 @@ function Dashboard() {
  
     const [organizations, setOrganizations] = useState([]);
     const [commitList , setCommitList] = useState([])
+    const [commits, setCommits] = useState([])
 
-    function handleaddToCommitList (addcommit) {
+    function handleRemoveCommit (commit) {
+        setCommitList(commits.filter(commitedTask => commitedTask.id !== commit.id))
+          fetch(`http://localhost:8080/tasks/` + commit.id, {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+        }
+
+
+    function handleAddToCommitList (addcommit, task) {
         if(commitList.every(organization => organization.id !== addcommit.id)){
           setCommitList([...commitList, addcommit])
-          fetch(`http://localhost:8080/organizations`, {
+          fetch(`http://localhost:8080/tasks`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          'Accept': 'application/json'
         },
-        body: JSON.stringify(addcommit),
-      });
+        body: JSON.stringify({
+            description: addcommit[task],
+            time_commitment_hours: 8,
+            name: addcommit.name,
+            commited_tasks: task,
+            volunteer_id: 1,
+            organization_id: addcommit.id
+        })
+      })
+        .then((r) => r.json())
+        .then((data) => console.log(data))
       }
       }
 
       console.log(commitList)
-
-    //   function handleremoveCommit (removeCommit) {
-    //     setCommitList(commitList.filter(Organization => Organization.id !== removeCommit.id))
-    //       fetch(`http://localhost:8080/organizations/` + Organization.id, {
-    //         method: "DELETE",
-    //         headers: {
-    //           "Content-Type": "application/json",
-    //         },
-    //       });
-    //     }
+      console.log(commits + "Commits")
 
 
    
@@ -49,13 +62,22 @@ function Dashboard() {
         })
     }, [])
 
+    useEffect(() => {
+        fetch("http://localhost:8080/tasks")
+        .then(res => res.json())
+        .then(data => {
+            setCommits(data);
+            console.log(data)
+        })
+    }, [])
+
     
     return (
         <div className='dbbg'>
         <h2 className='db'> DashBoard </h2>
         <div className='boxes'>
-        <Organization organizations={organizations} onCommitmentClick={handleaddToCommitList} />
-        <Task commitList={commitList} onCommitmentClick={handleaddToCommitList}/>
+        <Organization organizations={organizations} onCommitmentClick={handleAddToCommitList} />
+        <Task commitList={commitList} onRemoveCommitmentClick={handleRemoveCommit} commits={commits}/>
         </div>
         </div>
         

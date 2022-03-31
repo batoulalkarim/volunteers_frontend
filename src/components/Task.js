@@ -1,11 +1,14 @@
 import React from 'react' 
-import TaskCard from './TaskCard'
+import CommitedCard from './CommitedCard'
 
 
-function Task({commitList, onCommitmentClick}) {
+function Task({ onRemoveCommitmentClick, commits}) {
 
-  const commitedList = commitList.map((commit) => {
-      return(<TaskCard key={commit.id} onCommitmentClick={onCommitmentClick}/>)
+    console.log(commits)
+    // console.log(onRemoveCommitmentClick)
+  const commitedList = commits.map((commit) => {
+      console.log(onRemoveCommitmentClick)
+      return(<CommitedCard key={commit.id} onRemoveCommitmentClick={onRemoveCommitmentClick} commit={commit}/>)
   })
 
     return(
