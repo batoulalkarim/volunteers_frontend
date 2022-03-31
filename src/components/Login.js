@@ -39,7 +39,7 @@ function Login({ setToken }) {
     return (
         
         <div className="login-wrapper">
-            <h1 id='logintitle'><ul>LIVE WELL</ul></h1>
+            <h1 className='logintitle'>LIVE WELL</h1>
         <div >
             
             <h1 className="litext"> Log In</h1>
