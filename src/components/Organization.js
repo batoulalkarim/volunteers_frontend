@@ -1,9 +1,9 @@
 import React from 'react';
 import OrgCard from './OrgCard';
 
- function Organization( {organizations, trigger, onClick, setTrigger} ) {
+ function Organization( {organizations, onCommitmentClick} ) {
     const orgCards = organizations.map((organization) => {
-        return <OrgCard key={organization.id} organization={organization} trigger={trigger} onClick={onClick} setTrigger={setTrigger} organizations={organizations} />
+        return <OrgCard key={organization.id} organization={organization} onCommitmentClick={onCommitmentClick} />
     })
 
     return(

@@ -9,7 +9,33 @@ import Task from './Task';
 function Dashboard() {
  
     const [organizations, setOrganizations] = useState([]);
-    const [buttonPopup, setButtonPopup] = useState(false)
+    const [commitList , setCommitList] = useState([])
+
+    function handleaddToCommitList (addcommit) {
+        if(commitList.every(organization => organization.id !== addcommit.id)){
+          setCommitList([...commitList, addcommit])
+          fetch(`http://localhost:8080/organizations`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(addcommit),
+      });
+      }
+      }
+
+      console.log(commitList)
+
+    //   function handleremoveCommit (removeCommit) {
+    //     setCommitList(commitList.filter(Organization => Organization.id !== removeCommit.id))
+    //       fetch(`http://localhost:8080/organizations/` + Organization.id, {
+    //         method: "DELETE",
+    //         headers: {
+    //           "Content-Type": "application/json",
+    //         },
+    //       });
+    //     }
+
 
    
     
@@ -23,16 +49,20 @@ function Dashboard() {
         })
     }, [])
 
+    
     return (
         <div className='dbbg'>
         <h2 className='db'> DashBoard </h2>
         <div className='boxes'>
-        <Organization organizations={organizations} onClick={() => setButtonPopup(true)} trigger={buttonPopup} setTrigger={setButtonPopup}/>
-        <Task organizations={organizations} />
+        <Organization organizations={organizations} onCommitmentClick={handleaddToCommitList} />
+        <Task commitList={commitList} onCommitmentClick={handleaddToCommitList}/>
         </div>
         </div>
         
     );
 }
+
+// onRemoveCommitmentClick={handleremoveCommit}
+// onCommitmentClick={handleaddToCommitList}
 
 export default Dashboard;
