@@ -27,7 +27,10 @@ function App() {
   }
   return (
     <div className="wrapper">
+      <div className='livewell'>
       <h1>LIVE WELL</h1>
+      <h1>LIVE WELL</h1>
+      </div>
       
       <BrowserRouter>
       <Nav />
