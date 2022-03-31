@@ -6,7 +6,7 @@ function Contact() {
         <div className='contactwrap'>
             <h1>Contact Us</h1>
             <div className="dropdown">
-                <label htmlFor="pickone">Please choose an option:</label>
+                <label htmlFor="pickone" className="pickone">Please choose an option:</label>
                 <br />
                 <div className="dropdown-content">
                     <ul className='centerul'>
@@ -18,9 +18,10 @@ function Contact() {
                 </div>
             </div>
             <h2>Have a comment or complain? Contact us directly:</h2>
-            <p>Batoul Alkarim: <br /> batoulalkarim1@gmail.com <br /> 
+            <p>Batoul Alkarim: <br /> 
             LinkedIn: <a href="https://www.linkedin.com/in/batoul-alkarim-421172108/" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/linkedin-shiny-icon-logo-5.png" width="30" alt="linkedin shiny icon logo" /></a>
             <br />Email: <a href="mailto:batoulalkarim1@gmail.com"><img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png" width="35" alt="logo gmail png file gmail icon svg wikimedia commons" /></a>
+            <br />
             <br />
             Phone: (720)-862-8063
             </p>

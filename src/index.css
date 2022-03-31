@@ -51,7 +51,7 @@
 
 .recForm {
   text-align: center;
-  margin-top: -20px;
+  margin-top: -60px;
 }
 .orgForm {
   text-align: center;
@@ -63,11 +63,22 @@
     width: 60px;
     position: relative;
     padding-right: 60px;
-   
+    background-color: rgb(127, 240, 255);
+    text-align: center;
+    opacity: 60%;
 }
-
+.pickone {
+  font-size: 20px;
+}
+.dropdown-content {
+  border: solid;
+  margin-left: 35%;
+  margin-right: 35%;
+  
+}
 .contactwrap {
   text-align:center;
+  margin-top: -50px;
 }
 .wrapper {
   height: 100%;
@@ -104,14 +115,15 @@
   /* overflow:hidden; */
   
 }
-#logintitle {
+.logintitle {
   text-align: left;
   font-size: 40px;
   margin-left: 20px;
   margin-right: 1000px;
-  padding-right: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
   padding-bottom: 20px;
-  margin-top: -50px;
+  margin-top: 40px;
   left: 0;
   color: rgb(17, 17, 17);
   letter-spacing: 4px;
